@@ -1,6 +1,18 @@
-const data = require('./data.json')
+//callback function
+//synchronous callbacks
+function greet(name) {
+    console.log(`Hello ${name}`)
+}
+
+function greetAzeez(greetFn) {
+    name = 'Azeez'
+    greetFn(name)
+}
+
+greetAzeez(greet)
+// const data = require('./data.json')
 // const path = require("node:path")
-const path = require("path")
+// const path = require("path")
 
 // console.log(path.basename(__filename))
 // console.log(path.basename(__dirname))
