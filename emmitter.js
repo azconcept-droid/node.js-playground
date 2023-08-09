@@ -8,8 +8,9 @@ emitter.on('order-pizza', (size, topping) => {
 
 emitter.on('order-pizza', (size) => {
     if (size === 'large') {
-        console.log(`Order received! Baking a ${size} pizza with ${topping}`)
+        console.log("Serving complementary drink")
     }
 })
 
+console.log("Do work before events occurs int the system")
 emitter.emit('order-pizza', 'large', 'mushroom')
